@@ -39,3 +39,26 @@ var swiper = new Swiper(".review-slider", {
         }
     },
 });
+
+// pop up
+const closeBtn =  document.querySelector("#close-popup-btn");
+const oppenBtn = document.querySelector('#oppen-popup-btn');
+const popup    = document.querySelector('.popup');
+
+// console.log(popup.)
+
+oppenBtn.addEventListener('click', (event) =>{
+    popup.classList.toggle('hide');
+});
+
+popup.addEventListener('click', (event) =>{
+    if(event.target == event.currentTarget){
+        popup.classList.toggle('hide');
+    }
+});
+
+closeBtn.addEventListener('click', (event) =>{
+    popup.classList.toggle('hide');
+});
+
+

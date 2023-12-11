@@ -12,7 +12,7 @@
 
     <!-- Font Awesome CDN Link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS File Link  -->
     <link rel="stylesheet" href="Style.css">
 
@@ -72,9 +72,14 @@
                 <h3 class="title">Điều gì khiến cà phê của chúng tôi trở nên đặc biệt!</h3>
                 <p>Chúng tôi luôn đem lại cho bạn những sản phẩm và trải nghiệm tốt nhất
                 <br><b>Miễn phí giao hàng khi tổng hóa đơn từ 99.000đ khi đặt qua hotline</b>.</p>
-                <a href="#" class="btn">đọc thêm</a>
+                <a  class="btn"><button id="oppen-popup-btn" 
+                style="background-color: #ffff; cursor: pointer;"
+                >đọc thêm</button></a>
+
+                 
+
                 <div class="icons-container">
-                    <div class="icons">
+                    <div class="icons"> 
                         <img src="image/about-icon-1.png" alt="">
                         <h3>Cà phê đạt chuẩn chất lượng</h3>
                     </div>
@@ -86,6 +91,39 @@
                         <img src="image/about-icon-3.png" alt="">
                         <h3>Giao hàng miễn phí</h3>
                     </div>
+                </div>
+            </div>
+
+            <!-- phần popup đọc thêm -->
+            <div class="popup hide" >
+                <div class="popup-inner">
+                    <div class="popup-header">
+                        <h3>Về chúng tôi</h3>
+                        <button id="close-popup-btn"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="popup-body">
+                        <h3>Chúng Tôi là Ai ?</h3>
+                        <p>Chúng tôi là một gia đình đam mê cà phê, tận tâm mang đến cho cộng đồng những trải nghiệm thưởng thức cà phê độc đáo và không gian thoải mái. Được thành lập với sứ mệnh tạo ra không gian gặp gỡ, chia sẻ và thư giãn, Caffin tự hào là điểm hẹn lý tưởng cho những người yêu thích hương vị cà phê đặc sắc.</p>
+                    
+                        <h3>Sứ Mệnh của Chúng Tôi:</h3>
+                        <p>Tại Caffin, chúng tôi cam kết mang lại cho khách hàng không chỉ là thức uống cà phê chất lượng cao mà còn là trải nghiệm thoải mái và ấm cúng. Chúng tôi tin rằng cà phê không chỉ là đồ uống, mà còn là ngôn ngữ kết nối, nơi mà mọi cuộc trò chuyện trở nên ấm áp và ý nghĩa.</p>
+                    
+                        <h3>Chất Lượng Là Quan Trọng Nhất:</h3>
+                        <p>Chúng tôi chú trọng vào việc chọn lựa nguồn gốc cà phê chất lượng cao và quy trình pha chế tận tâm. Đội ngũ barista của chúng tôi được đào tạo chuyên nghiệp, luôn nỗ lực để tạo ra những tách cà phê với hương vị tinh tế, độ đậm vừa đủ và lớp kem sữa béo ngậy.</p>
+                    
+                        <h3>Không Gian Thân Thiện và Sáng Tạo:</h3>
+                        <p>Caffin là không gian nghệ thuật, nơi mà mỗi chi tiết được chăm chút để tạo nên một không gian thoải mái và ấn tượng. Chúng tôi khuyến khích sự sáng tạo và thư giãn, đồng thời chào đón cả gia đình và bạn bè đến thưởng thức những khoảnh khắc trân trọng tại quán.</p>
+                    
+                        <h3>Liên Kết Cộng Đồng:</h3>
+                        <p>Chúng tôi tự hào là một phần của cộng đồng. Caffin luôn hỗ trợ các sự kiện và hoạt động cộng đồng, tạo điều kiện cho mọi người kết nối và chia sẻ.</p>
+                    
+                        <h3>Hãy Đến và Cảm Nhận:</h3>
+                        <p>Hãy ghé thăm Caffin để cảm nhận không khí ấm áp, hương vị đặc trưng và dịch vụ tận tâm của chúng tôi. Chúng tôi mong đợi được phục vụ và chia sẻ niềm đam mê cà phê với bạn!</p>
+                    
+                        <p>Cảm ơn bạn đã đến và trở thành một phần của hành trình cà phê của chúng tôi!</p>
+                    
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -263,30 +301,30 @@
     <!-- FOOTER -->
     <section class="footer">
         <div class="box-container">
-            <div class="box">
+            <!--<div class="box">
                 <h3>our branches</h3>
                 <a href="#"><i class="fas fa-arrow-right"></i> india</a>
                 <a href="#"><i class="fas fa-arrow-right"></i> USA</a>
                 <a href="#"><i class="fas fa-arrow-right"></i> france</a>
                 <a href="#"><i class="fas fa-arrow-right"></i> africa</a>
                 <a href="#"><i class="fas fa-arrow-right"></i> japan</a>
-            </div>
+            </div>-->
 
             <div class="box">
                 <h3>quick links</h3>
-                <a href="#home"><i class="fas fa-arrow-right"></i> home</a>
-                <a href="#about"><i class="fas fa-arrow-right"></i> about</a>
+                <a href="#home"><i class="fas fa-arrow-right"></i>Trang chủ</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i>Thông tin về chúng tôi</a>
                 <a href="#menu"><i class="fas fa-arrow-right"></i> menu</a>
-                <a href="#review"><i class="fas fa-arrow-right"></i> review</a>
-                <a href="#book"><i class="fas fa-arrow-right"></i> book</a>
+                <a href="#review"><i class="fas fa-arrow-right"></i> Đánh giá</a>
+                <a href="#book"><i class="fas fa-arrow-right"></i>Đặt hàng</a>
             </div>
 
             <div class="box">
                 <h3>contact info</h3>
-                <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
-                <a href="#"><i class="fas fa-phone"></i> +111-222-3333</a>
-                <a href="#"><i class="fas fa-envelope"></i> coffee@gmail.com</a>
-                <a href="#"><i class="fas fa-envelope"></i> Perú, Lima</a>
+                <a href="#"><i class="fas fa-phone"></i> +84 123456789</a>
+               <!-- <a href="#"><i class="fas fa-phone"></i> +111-222-3333</a>-->
+                <a href="#"><i class="fas fa-envelope"></i> caffin@gmail.com</a>
+               <!-- <a href="#"><i class="fas fa-envelope"></i> Perú, Lima</a>-->
             </div>
 
             <div class="box">
@@ -295,7 +333,6 @@
                 <a href="#"><i class="fab fa-twitter"></i> twitter</a>
                 <a href="#"><i class="fab fa-instagram"></i> instagram</a>
                 <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
-                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
             </div>
         </div>
 	<div class="credit">created by <span>Minh Hieu and Huu Tien designers</span> | all rights reserved</div>

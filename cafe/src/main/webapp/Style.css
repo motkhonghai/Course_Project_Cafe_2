@@ -31,7 +31,8 @@ html {
 }
 
 section {
-    padding: 2rem 9%;
+    /* padding: 2rem 9%; */
+    padding:0 20px 0 20px;
 }
 
 .heading {
@@ -113,6 +114,8 @@ section {
     cursor: pointer;
     display: none;
 }
+
+
 
 /* HOME */
 
@@ -254,6 +257,63 @@ section {
     color: var(--main-color);
 }
 
+.about .row .popup{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+}
+
+.about .row .popup-inner{
+    width: 85vw;
+    /* height: 70vw; */
+    position: relative;
+    top: 8%;
+    padding: 0  15px 0 0;
+    margin: auto;
+    /* background: #ffff; */
+    overflow-y: auto;
+    animation: popupshow 0.2s linear;
+}
+
+.about .row .popup-inner .popup-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    background: rgb(201, 201, 172);
+}
+
+.about .row .popup-inner .popup-header button{
+    padding: 10px;
+    cursor: pointer;
+    background: rgb(201, 201, 172);
+    font-size: 25px;
+}
+.about .row .popup-inner .popup-body{
+    padding: 15px;
+    font-size: 16px;
+    background: #ffff;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes popupshow{
+    from{
+        top: -200px;
+    }
+
+    to {
+        top: 15%;
+        opacity: 1;
+    }
+}
 /* MENU */
 
 .menu {
